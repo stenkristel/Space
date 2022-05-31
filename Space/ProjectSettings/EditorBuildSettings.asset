@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Marque Victory.unity
     guid: 489c2f1f7e6f91d4693221219bbf96bc
+  - enabled: 1
+    path: Assets/Scenes/Roderik Victory screen.unity
+    guid: 0f1533be94178b04e8d95c95f7508082
   m_configObjects: {}

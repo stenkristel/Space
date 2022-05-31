@@ -10,8 +10,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        Debug.Log(gameObject.name);
-        Debug.Log(transform.position);
+
     }
 
     // Update is called once per frame
@@ -28,10 +27,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.velocity = new Vector3(0, 3.5f, 0);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            rb.velocity = new Vector3(0, -5, 0);
         }
     }
 
