@@ -18,11 +18,11 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position -= new Vector3(0.004f, 0, 0);
+            transform.position -= new Vector3(0.04f, 0, 0);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position -= new Vector3(-0.004f, 0, 0);
+            transform.position -= new Vector3(-0.04f, 0, 0);
         }
         if (Input.GetKey(KeyCode.Space))
         {
