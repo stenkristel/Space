@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Movement2 : MonoBehaviour
 {
+    private float Ymovement;
+
     public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Ymovement = 3.5f;
 
     }
 
@@ -25,7 +28,12 @@ public class Movement2 : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.velocity = new Vector3(0, 3.7f, 0);
+            rb.velocity = new Vector3(0, Ymovement, 0);
+        }
+
+        if (Ymovement <= 0)
+        {
+            Ymovement = 0.5f;
         }
 
     }
@@ -33,5 +41,7 @@ public class Movement2 : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         Debug.Log(col.gameObject.name);
+        Ymovement -= 0.5f;
+        rb.velocity = new Vector3(0, Ymovement, 0);
     }
 }
