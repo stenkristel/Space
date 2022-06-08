@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 313797991}
   - component: {fileID: 313797992}
   m_Layer: 0
-  m_Name: spaceship poggers
+  m_Name: Spaceship Marque
   m_TagString: player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 504926825}
   - component: {fileID: 504926827}
   m_Layer: 0
-  m_Name: BO_roderick_spaceship
+  m_Name: Spaceship Roderick
   m_TagString: player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
