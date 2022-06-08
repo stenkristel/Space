@@ -31,9 +31,10 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector3(0, Ymovement, 0);
         }
 
-        if (Ymovement <= 0)
+        if (Ymovement <= 0.5)
         {
-            Ymovement = 0.5f;
+            Ymovement = 1;
+            rb.velocity = new Vector3(0, Ymovement, 0);
         }
 
     }
