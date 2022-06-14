@@ -6,8 +6,7 @@ public class Movement : MonoBehaviour
 {
     private float Ymovement;
 
-    public Rigidbody rb;
-    // Start is called before the first frame update
+    [SerializeField] private Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -39,10 +38,18 @@ public class Movement : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnCollisionEnter(Collision targetObj)
     {
-        Debug.Log(col.gameObject.name);
-        Ymovement -= 0.5f;
+        if (targetObj.gameObject.tag.Equals("Meteorite"))
+        {
+            Ymovement -= 0.5f;
+        }
+
+        if (targetObj.gameObject.tag.Equals("SpeedBoost"))
+        {
+            Ymovement += 0.5f;
+            
+        }
         rb.velocity = new Vector3(0, Ymovement, 0);
     }
 }

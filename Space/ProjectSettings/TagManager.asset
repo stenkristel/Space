@@ -6,6 +6,8 @@ TagManager:
   tags:
   - player1
   - player2
+  - Meteorite
+  - SpeedBoost
   layers:
   - Default
   - TransparentFX

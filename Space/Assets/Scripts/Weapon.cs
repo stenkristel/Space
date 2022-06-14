@@ -27,8 +27,8 @@ public class Weapon : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Instantiate(bulletPrefab2, FirePointR0.position, FirePointR0.rotation);
-            Instantiate(bulletPrefab, FirePointR1.position, FirePointR1.rotation);
+            Instantiate(bulletPrefab2, FirePointR1.position, FirePointR1.rotation);
+            Instantiate(bulletPrefab, FirePointR0.position, FirePointR0.rotation);
             Instantiate(bulletPrefab2, FirePointR2.position, FirePointR2.rotation);
         }
 
