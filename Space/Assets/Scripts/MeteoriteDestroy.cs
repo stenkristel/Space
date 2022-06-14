@@ -18,15 +18,12 @@ public class MeteoriteDestroy : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         DropPrefab = GameObject.Find(Dropname);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
     }
 }
