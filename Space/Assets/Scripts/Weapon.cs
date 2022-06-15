@@ -11,7 +11,6 @@ public class Weapon : MonoBehaviour
     public Transform FirePointR2;
     private GameObject bulletPrefab;
     private GameObject bulletPrefab2;
-    private GameObject bullets;
     public string bulletname;
     public string bulletname2;
     public float fireRate = 0.5F;
@@ -29,7 +28,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFireR)
         {
             nextFireR = Time.time + fireRateR;
-            bullets = Instantiate(bulletPrefab2, FirePointR1.position, FirePointR1.rotation);
+            Instantiate(bulletPrefab2, FirePointR1.position, FirePointR1.rotation);
             Instantiate(bulletPrefab, FirePointR0.position, FirePointR0.rotation);
             Instantiate(bulletPrefab2, FirePointR2.position, FirePointR2.rotation);
         }
@@ -41,6 +40,4 @@ public class Weapon : MonoBehaviour
         bulletPrefab = GameObject.Find(bulletname);
         bulletPrefab2 = GameObject.Find(bulletname2);
     }
-
-
 }
