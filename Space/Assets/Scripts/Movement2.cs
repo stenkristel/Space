@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement2 : MonoBehaviour
 {
+    [SerializeField] private float speed;
     private float Ymovement;
 
     [SerializeField] private Rigidbody rb;
@@ -19,12 +20,13 @@ public class Movement2 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.position -= new Vector3(0.008f, 0, 0);
+            rb.transform.position -= Vector3.right * Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position -= new Vector3(-0.008f, 0, 0);
+            rb.transform.position -= Vector3.left * Time.deltaTime * speed;
         }
+
         if (Input.GetKey(KeyCode.Space))
         {
             rb.velocity = new Vector3(0, Ymovement, 0);

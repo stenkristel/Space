@@ -28306,6 +28306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b557f79ccc45f4db8c6c4e6dbecd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
   rb: {fileID: 0}
 --- !u!114 &1405832693
 MonoBehaviour:
@@ -41101,6 +41102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4a647109ced394ab274f0fbbf2c523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
   rb: {fileID: 2035491113}
 --- !u!54 &2035491113
 Rigidbody:
