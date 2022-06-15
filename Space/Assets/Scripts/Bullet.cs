@@ -5,10 +5,19 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
-    public Rigidbody2D rb;
+    public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         rb.velocity = transform.up * speed;
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Meteorite")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
+

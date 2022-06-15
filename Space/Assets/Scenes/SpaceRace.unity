@@ -313,9 +313,9 @@ GameObject:
   - component: {fileID: 275524794}
   - component: {fileID: 275524793}
   - component: {fileID: 275524792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (9)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,7 +334,7 @@ Transform:
   - {fileID: 610781625}
   - {fileID: 850214530}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &275524792
 MonoBehaviour:
@@ -425,9 +425,9 @@ GameObject:
   - component: {fileID: 282055573}
   - component: {fileID: 282055572}
   - component: {fileID: 282055571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (6)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -446,7 +446,7 @@ Transform:
   - {fileID: 1428128864}
   - {fileID: 1349410216}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &282055571
 MonoBehaviour:
@@ -535,9 +535,9 @@ GameObject:
   - component: {fileID: 313797990}
   - component: {fileID: 313797991}
   - component: {fileID: 313797992}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spaceship Marque
-  m_TagString: player2
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -632,63 +632,6 @@ MonoBehaviour:
   FirePointR2: {fileID: 0}
   bulletname: Bullet
   bulletname2: Bullet
---- !u!1001 &355709704
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 165237627154217892, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_Name
-      value: BulletR2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.34599
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.70594674
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999247
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.012276794
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 1.407
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
 --- !u!1 &393417502
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,9 +645,9 @@ GameObject:
   - component: {fileID: 393417506}
   - component: {fileID: 393417505}
   - component: {fileID: 393417504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (1)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -865,7 +808,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486459795
 GameObject:
@@ -961,7 +904,7 @@ GameObject:
   - component: {fileID: 491996201}
   - component: {fileID: 491996200}
   - component: {fileID: 491996199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,9 +998,9 @@ GameObject:
   - component: {fileID: 504926826}
   - component: {fileID: 504926825}
   - component: {fileID: 504926827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spaceship Roderick
-  m_TagString: player1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1160,7 +1103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 587006295}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1175,7 +1118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587006294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 2.44, z: -0.07520227}
+  m_LocalPosition: {x: 3.96, y: 2.44, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_Children: []
   m_Father: {fileID: 313797990}
@@ -1190,7 +1133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 589913011}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,7 +1148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589913010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.92, y: 2.26, z: -0.07520227}
+  m_LocalPosition: {x: -4.92, y: 2.26, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_Children:
   - {fileID: 2051449912}
@@ -1222,7 +1165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610781625}
   - component: {fileID: 610781626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1428,7 @@ GameObject:
   - component: {fileID: 718733337}
   - component: {fileID: 718733336}
   - component: {fileID: 718733335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1650,63 +1593,6 @@ Transform:
   m_Father: {fileID: 1818657131}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &808729945
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 165237627154217892, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_Name
-      value: BulletR2 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990464596002348286, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a661f7bdf15fb004f93e403f4f2cf3b9, type: 3}
 --- !u!1 &827584145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,7 +1603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827584146}
   - component: {fileID: 827584147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1801,7 +1687,7 @@ GameObject:
   - component: {fileID: 850214533}
   - component: {fileID: 850214532}
   - component: {fileID: 850214531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1913,7 +1799,7 @@ Transform:
   m_Children:
   - {fileID: 1854014561}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &897430556
 GameObject:
@@ -1928,9 +1814,9 @@ GameObject:
   - component: {fileID: 897430560}
   - component: {fileID: 897430559}
   - component: {fileID: 897430558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (7)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1949,7 +1835,7 @@ Transform:
   - {fileID: 1974514884}
   - {fileID: 1281003584}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &897430558
 MonoBehaviour:
@@ -2057,7 +1943,7 @@ Transform:
   - {fileID: 667235987}
   - {fileID: 1398809788}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931412501
 GameObject:
@@ -2320,7 +2206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1008313722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePoint (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2335,7 +2221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008313721}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8600001, y: 3.5800002, z: -0.07520227}
+  m_LocalPosition: {x: -3.8600001, y: 3.5800002, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_Children: []
   m_Father: {fileID: 313797990}
@@ -2350,7 +2236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1041839171}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePoint (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2365,7 +2251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041839170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8999999, y: 3.8400002, z: -0.07520227}
+  m_LocalPosition: {x: 2.8999999, y: 3.8400002, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_Children: []
   m_Father: {fileID: 313797990}
@@ -2378,8 +2264,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 615361049980192113, guid: 7225a9562b3323845844aced56062383, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1198409211}
     - target: {fileID: 1474528908416428695, guid: 7225a9562b3323845844aced56062383, type: 3}
       propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474528908416428695, guid: 7225a9562b3323845844aced56062383, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474528908416428695, guid: 7225a9562b3323845844aced56062383, type: 3}
+      propertyPath: m_TagString
       value: Bullet
       objectReference: {fileID: 0}
     - target: {fileID: 7429912437157340296, guid: 7225a9562b3323845844aced56062383, type: 3}
@@ -2396,7 +2294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7429912437157340296, guid: 7225a9562b3323845844aced56062383, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7429912437157340296, guid: 7225a9562b3323845844aced56062383, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2426,7 +2324,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4633565419618956286, guid: 7225a9562b3323845844aced56062383, type: 3}
+    - {fileID: 8567613183730352171, guid: 7225a9562b3323845844aced56062383, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7225a9562b3323845844aced56062383, type: 3}
 --- !u!1001 &1073631553
 PrefabInstance:
@@ -2484,6 +2384,10 @@ PrefabInstance:
       value: SpeedDrop
       objectReference: {fileID: 0}
     - target: {fileID: 7954231362357693859, guid: 9af93aec86d892d47b248f6cd9540f0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954231362357693859, guid: 9af93aec86d892d47b248f6cd9540f0c, type: 3}
       propertyPath: m_TagString
       value: SpeedBoost
       objectReference: {fileID: 0}
@@ -2494,88 +2398,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2681446676657759638, guid: 9af93aec86d892d47b248f6cd9540f0c, type: 3}
   m_PrefabInstance: {fileID: 1073631553}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1074584075
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1074584076}
-  - component: {fileID: 1074584077}
-  m_Layer: 0
-  m_Name: Meteoriet_texture
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1074584076
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074584075}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.026, y: -0.17258462, z: 0}
-  m_LocalScale: {x: 0.674265, y: 0.674265, z: 2.24755}
-  m_Children: []
-  m_Father: {fileID: 1540378286}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1074584077
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074584075}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 34924f3e13e282b4fafe60115664e123, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4, y: 4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1080406817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2766,9 +2588,9 @@ GameObject:
   - component: {fileID: 1110049782}
   - component: {fileID: 1110049781}
   - component: {fileID: 1110049780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (5)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2787,7 +2609,7 @@ Transform:
   - {fileID: 1232203760}
   - {fileID: 1685674527}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1110049780
 MonoBehaviour:
@@ -2959,7 +2781,7 @@ GameObject:
   - component: {fileID: 1156596683}
   - component: {fileID: 1156596682}
   - component: {fileID: 1156596681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3124,6 +2946,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1198409209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1474528908416428695, guid: 7225a9562b3323845844aced56062383, type: 3}
+  m_PrefabInstance: {fileID: 1051821885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1198409210
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198409209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.06
+  m_Center: {x: 0, y: 0.25, z: 0}
+--- !u!54 &1198409211
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198409209}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &1230892677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,7 +2989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1230892678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePointR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3148,7 +3004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230892677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1799927, y: 2.8, z: -0.12836795}
+  m_LocalPosition: {x: 4.1799927, y: 2.8, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_Children: []
   m_Father: {fileID: 504926826}
@@ -3164,7 +3020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1232203760}
   - component: {fileID: 1232203761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3248,7 +3104,7 @@ GameObject:
   - component: {fileID: 1281003587}
   - component: {fileID: 1281003586}
   - component: {fileID: 1281003585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3343,7 +3199,7 @@ GameObject:
   - component: {fileID: 1349410219}
   - component: {fileID: 1349410218}
   - component: {fileID: 1349410217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3439,9 +3295,9 @@ GameObject:
   - component: {fileID: 1351863207}
   - component: {fileID: 1351863206}
   - component: {fileID: 1351863205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (4)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3460,7 +3316,7 @@ Transform:
   - {fileID: 1385182057}
   - {fileID: 1156596680}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1351863205
 MonoBehaviour:
@@ -3549,7 +3405,7 @@ GameObject:
   - component: {fileID: 1352069037}
   - component: {fileID: 1352069040}
   - component: {fileID: 1352069039}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3629,7 +3485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1385182057}
   - component: {fileID: 1385182058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3813,9 +3669,9 @@ GameObject:
   - component: {fileID: 1405832694}
   - component: {fileID: 1405832692}
   - component: {fileID: 1405832693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerR
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3935,7 +3791,7 @@ Transform:
   m_Children:
   - {fileID: 504926826}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415886312
 GameObject:
@@ -4029,7 +3885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428128864}
   - component: {fileID: 1428128865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4224,7 +4080,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 393417503}
-  - {fileID: 1540378286}
   - {fileID: 1843259281}
   - {fileID: 1351863204}
   - {fileID: 1110049779}
@@ -4234,7 +4089,7 @@ Transform:
   - {fileID: 275524791}
   - {fileID: 1545972662}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1540268270
 GameObject:
@@ -4248,7 +4103,7 @@ GameObject:
   - component: {fileID: 1540268274}
   - component: {fileID: 1540268273}
   - component: {fileID: 1540268272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4331,117 +4186,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540268270}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1540378285
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1540378286}
-  - component: {fileID: 1540378290}
-  - component: {fileID: 1540378289}
-  - component: {fileID: 1540378288}
-  - component: {fileID: 1540378287}
-  m_Layer: 0
-  m_Name: Meteorite (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1540378286
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540378285}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.11, y: 7.426, z: 0}
-  m_LocalScale: {x: 0.5831, y: 0.5831, z: 0.17493}
-  m_Children:
-  - {fileID: 1074584076}
-  m_Father: {fileID: 1480440288}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1540378287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540378285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d83438a8c59400d4c9db4ac6e1fe3498, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DropLocation: {fileID: 0}
-  Dropname: 
---- !u!135 &1540378288
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540378285}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1540378289
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540378285}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1540378290
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540378285}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1545972661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4455,9 +4199,9 @@ GameObject:
   - component: {fileID: 1545972665}
   - component: {fileID: 1545972664}
   - component: {fileID: 1545972663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (10)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4476,7 +4220,7 @@ Transform:
   - {fileID: 1797121023}
   - {fileID: 1540268271}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1545972663
 MonoBehaviour:
@@ -4564,7 +4308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646986698}
   - component: {fileID: 1646986699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4664,7 +4408,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.35, y: 0.35, z: 0.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1681335106
 GameObject:
@@ -4696,7 +4440,7 @@ Transform:
   - {fileID: 1818657131}
   - {fileID: 2017829175}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685674526
 GameObject:
@@ -4710,7 +4454,7 @@ GameObject:
   - component: {fileID: 1685674530}
   - component: {fileID: 1685674529}
   - component: {fileID: 1685674528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4886,7 +4630,7 @@ GameObject:
   - component: {fileID: 1757931250}
   - component: {fileID: 1757931252}
   - component: {fileID: 1757931251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePointR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4901,7 +4645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757931249}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.85, y: 6.85, z: -0.12836795}
+  m_LocalPosition: {x: 0.85, y: 6.85, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_Children: []
   m_Father: {fileID: 504926826}
@@ -4987,7 +4731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1797121023}
   - component: {fileID: 1797121024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5190,9 +4934,9 @@ GameObject:
   - component: {fileID: 1843259284}
   - component: {fileID: 1843259283}
   - component: {fileID: 1843259282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (3)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5211,7 +4955,7 @@ Transform:
   - {fileID: 2105103345}
   - {fileID: 2137528007}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1843259282
 MonoBehaviour:
@@ -5399,7 +5143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974514884}
   - component: {fileID: 1974514885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5480,7 +5224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2012652409}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePointR (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5495,7 +5239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012652408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.8199768, y: 2.3999999, z: -0.12836795}
+  m_LocalPosition: {x: -2.8199768, y: 2.3999999, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 0.1}
   m_Children: []
   m_Father: {fileID: 504926826}
@@ -5552,9 +5296,9 @@ GameObject:
   - component: {fileID: 2035491113}
   - component: {fileID: 2035491118}
   - component: {fileID: 2035491112}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerL
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5599,8 +5343,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.3, y: 0.1, z: 1}
+  m_Center: {x: 0, y: 0.45, z: 0}
 --- !u!23 &2035491115
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5662,7 +5406,7 @@ Transform:
   m_Children:
   - {fileID: 313797990}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2035491118
 MonoBehaviour:
@@ -5689,9 +5433,9 @@ GameObject:
   - component: {fileID: 2041402389}
   - component: {fileID: 2041402388}
   - component: {fileID: 2041402387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteorite (8)
-  m_TagString: Untagged
+  m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5710,7 +5454,7 @@ Transform:
   - {fileID: 1646986698}
   - {fileID: 718733334}
   m_Father: {fileID: 1480440288}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2041402387
 MonoBehaviour:
@@ -5881,7 +5625,7 @@ GameObject:
   - component: {fileID: 2051449912}
   - component: {fileID: 2051449911}
   - component: {fileID: 2051449910}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: muzzleflash_animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5982,7 +5726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2105103345}
   - component: {fileID: 2105103346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meteoriet_texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6054,63 +5798,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &2111281255
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4152547539731981320, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_Name
-      value: BulletR
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.6732607
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.41389436
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.012276794
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4771803686350816760, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 1.407
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9d4276102d4c5364c9d8a57eed0f7155, type: 3}
 --- !u!1 &2137399728
 GameObject:
   m_ObjectHideFlags: 0
@@ -6143,7 +5830,7 @@ Transform:
   - {fileID: 1434344113}
   - {fileID: 950049233}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137528006
 GameObject:
@@ -6157,7 +5844,7 @@ GameObject:
   - component: {fileID: 2137528010}
   - component: {fileID: 2137528009}
   - component: {fileID: 2137528008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Droploca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
