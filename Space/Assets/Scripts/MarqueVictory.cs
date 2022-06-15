@@ -15,7 +15,7 @@ public class MarqueVictory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y > 200)
+        if (transform.position.y > 61)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

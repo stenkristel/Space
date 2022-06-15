@@ -36,20 +36,27 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector3(0, Ymovement, 0);
         }
 
+        if (Ymovement >= 5f)
+        {
+            Ymovement = 4.5f;
+            rb.velocity = new Vector3(0, Ymovement, 0);
+        }
+
     }
 
     void OnCollisionEnter(Collision targetObj)
     {
         if (targetObj.gameObject.tag.Equals("Meteorite"))
         {
-            Ymovement -= 0.5f;
+            Ymovement -= 1f;
+            rb.velocity = new Vector3(0, Ymovement, 0);
         }
 
         if (targetObj.gameObject.tag.Equals("SpeedBoost"))
         {
             Ymovement += 0.5f;
-            
+            rb.velocity = new Vector3(0, Ymovement, 0);
         }
-        rb.velocity = new Vector3(0, Ymovement, 0);
+        
     }
 }

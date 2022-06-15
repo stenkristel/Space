@@ -7,23 +7,23 @@ public class MeteoriteDestroy : MonoBehaviour
     public Transform DropLocation;
     private GameObject DropPrefab;
     public string Dropname;
-    private float DropRate = (0.70f);
+    private float DropRate = (0.30f);
     
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision targetObj)
     {
         Destroy(gameObject);
-        if (Random.Range(0f, 1f)<=DropRate)
+        if (targetObj.gameObject.tag.Equals("Bullet"))
         {
-            Instantiate(DropPrefab, DropLocation.position, DropLocation.rotation);
+            if (Random.Range(0f, 1f) <= DropRate)
+            {
+                Instantiate(DropPrefab, DropLocation.position, DropLocation.rotation);
+            }
         }
+        
     }
 
     void Start()
     {
         DropPrefab = GameObject.Find(Dropname);
-    }
-
-    void Update()
-    {
     }
 }
