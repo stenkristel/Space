@@ -40,6 +40,10 @@ public class MeteoriteDestroy : MonoBehaviour
         speed = Random.Range(0.5f, 3.5f);
         DropPrefab = GameObject.Find(Dropname);
         rb = GetComponent<Rigidbody>();
+        if (Random.Range(0f, 1f) <=0.5)
+        {
+            speed = speed - (speed * 2);
+        }
     }
 
     void Update()
