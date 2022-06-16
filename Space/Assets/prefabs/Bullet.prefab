@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8124914323321575879}
   m_Layer: 6
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +51,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474528908416428695}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -156,8 +156,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8906563642841488690}
   m_LocalRotation: {x: 0, y: 0, z: 0.5735764, w: 0.8191521}
-  m_LocalPosition: {x: -2.79, y: 0.469, z: -0.534}
-  m_LocalScale: {x: 0.8, y: 6.092984, z: 1.023246}
+  m_LocalPosition: {x: -2.67, y: 0.89, z: -0.534}
+  m_LocalScale: {x: 0.5, y: 6.092984, z: 1.023246}
   m_Children: []
   m_Father: {fileID: 7429912437157340296}
   m_RootOrder: 0

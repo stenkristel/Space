@@ -9,6 +9,7 @@ TagManager:
   - Meteorite
   - SpeedBoost
   - Bullet
+  - border
   layers:
   - Default
   - TransparentFX
