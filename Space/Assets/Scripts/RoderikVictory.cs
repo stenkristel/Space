@@ -13,7 +13,7 @@ public class RoderikVictory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y > 61)
+        if (transform.position.y > 1000)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
