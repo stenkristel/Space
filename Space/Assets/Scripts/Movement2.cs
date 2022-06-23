@@ -6,16 +6,15 @@ public class Movement2 : MonoBehaviour
 {
     [SerializeField] private float speed;
     private float Ymovement;
-
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private GameObject SpriteFast;
+    [SerializeField] private GameObject SpriteMedium;
+    [SerializeField] private GameObject SpriteSlow;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         Ymovement = 3.5f;
-
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -32,16 +31,41 @@ public class Movement2 : MonoBehaviour
             rb.velocity = new Vector3(0, Ymovement, 0);
         }
 
-        if (Ymovement <= 0.5)
+        if (Ymovement <= 1.5f)
         {
-            Ymovement = 1;
+            Ymovement = 1.5f;
             rb.velocity = new Vector3(0, Ymovement, 0);
         }
 
-        if (Ymovement >= 5.5f)
+        if (Ymovement >= 5)
         {
             Ymovement = 5;
             rb.velocity = new Vector3(0, Ymovement, 0);
+        }
+
+        if (Ymovement >= 0)
+        {
+            if (Ymovement <= 2)
+            {
+                SpriteSlow.SetActive(true);
+                SpriteMedium.SetActive(false);
+                SpriteFast.SetActive(false);
+            }
+            if (Ymovement >= 3)
+            {
+                SpriteFast.SetActive(true);
+                SpriteSlow.SetActive(true);
+                SpriteMedium.SetActive(false);
+            }
+            if (Ymovement <= 3)
+            {
+                if (Ymovement >= 2)
+                {
+                    SpriteMedium.SetActive(true);
+                    SpriteSlow.SetActive(true);
+                    SpriteFast.SetActive(false);
+                }
+            }
         }
 
     }
