@@ -10,6 +10,8 @@ TagManager:
   - SpeedBoost
   - Bullet
   - border
+  - ufo
+  - BigSpeedBoost
   layers:
   - Default
   - TransparentFX

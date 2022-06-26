@@ -17,7 +17,7 @@ public class CameraL : MonoBehaviour
     void Update()
     {
         Vector3 setPosition = transform.position;
-        setPosition.y = player.transform.position.y + 1.7f;
+        setPosition.y = player.transform.position.y + 1.6f;
         setPosition.z = player.transform.position.z - 10;
         transform.position = setPosition;
     }
