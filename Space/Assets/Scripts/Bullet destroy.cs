@@ -10,5 +10,9 @@ public class Bulletdestroy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "ufo")
+        {
+            Destroy(gameObject);
+        }
     }
 }
