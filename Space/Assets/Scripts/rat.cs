@@ -2,13 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ufo : MonoBehaviour
+public class rat : MonoBehaviour
 {
-    public Transform DropLocation;
-    private GameObject DropPrefab;
-    public string Dropname;
     public float speed;
-    public float health;
     public GameObject Explosion;
     public Renderer rend;
     public Collider coll;
@@ -28,22 +24,23 @@ public class ufo : MonoBehaviour
 
         if (targetObj.gameObject.tag.Equals("Bullet"))
         {
-            health = health - 1f;
-            
-            if (health <= 0f)
-            {
-                rend = GetComponent<Renderer>();
-                rend.enabled = false;
-                coll = GetComponent<Collider>();
-                coll.enabled = false;
-                StartCoroutine(waiter());
-                speed = 0f;
-                Instantiate(DropPrefab, DropLocation.position, DropLocation.rotation);
-            }
+            rend = GetComponent<Renderer>();
+            rend.enabled = false;
+            coll = GetComponent<Collider>();
+            coll.enabled = false;
+            StartCoroutine(waiter());
+            speed = 0f;
+
         }
-
         speed = speed - (speed * 2);
-
+        if (speed > 0)
+        {
+            gameObject.transform.localScale = new Vector3(0.08f, 0.08f, 0.08f);
+        }
+        if (speed < 0)
+        {
+            gameObject.transform.localScale = new Vector3(-0.08f, 0.08f, 0.08f);
+        }
     }
 
     IEnumerator waiter()
@@ -52,17 +49,10 @@ public class ufo : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Explosion.SetActive(false);
     }
-
     void Start()
     {
-        health = 2f;
-        speed = (0.5f);
-        DropPrefab = GameObject.Find(Dropname);
+        speed = Random.Range(0.5f, 3.5f);
         rb = GetComponent<Rigidbody>();
-        if (Random.Range(0f, 1f) <= 0.5)
-        {
-            speed = speed - (speed * 2);
-        }
     }
 
     void Update()

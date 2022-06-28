@@ -12,6 +12,7 @@ TagManager:
   - border
   - ufo
   - BigSpeedBoost
+  - Rat
   layers:
   - Default
   - TransparentFX

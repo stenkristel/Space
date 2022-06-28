@@ -154,10 +154,18 @@ public class Movement : MonoBehaviour
             
         }
 
+        if (targetObj.gameObject.tag.Equals("Rat"))
+        {
+            StartCoroutine(waiter());
+        }
+
+    }
+    IEnumerator waiter()
+    {
+        Ymovement -= 1.5f;
+        yield return new WaitForSeconds(1.5f);
+        Ymovement += 1.5f;
     }
 
-    public void buttonlaunch()
-    {
-        Ymovement = 3.6f;
-    }
+
 }
