@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private float Ymovement;
+    public float Ymovement;
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private GameObject SpriteFast;
@@ -24,6 +24,9 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+
+        rb.velocity = new Vector3(0, Ymovement, 0);
+
         if (Input.GetKey(KeyCode.A))
         {
             rb.transform.position -= Vector3.right * Time.deltaTime * speed;
@@ -37,7 +40,7 @@ public class Movement : MonoBehaviour
             if (Ymovement < 1)
             {
                 Ymovement = 3.6f;
-                rb.velocity = new Vector3(0, Ymovement, 0);
+                
             }
             
         }
@@ -47,7 +50,7 @@ public class Movement : MonoBehaviour
             if (Ymovement >= 0.1)
             {
                 Ymovement = 1.5f;
-                rb.velocity = new Vector3(0, Ymovement, 0);
+                
             }
             
             
@@ -56,9 +59,7 @@ public class Movement : MonoBehaviour
         if (Ymovement > 5.5f)
         {
             Ymovement = 5.5f;
-            rb.velocity = new Vector3(0, Ymovement, 0);
         }
-
         
         if (Ymovement >= 0.1f)
         {
@@ -134,24 +135,29 @@ public class Movement : MonoBehaviour
         if (targetObj.gameObject.tag.Equals("Meteorite"))
         {
             Ymovement -= 0.7f; 
-            rb.velocity = new Vector3(0, Ymovement, 0);
+            
         }
         if (targetObj.gameObject.tag.Equals("ufo"))
         {
             Ymovement -= 1f;
-            rb.velocity = new Vector3(0, Ymovement, 0);
+            
         }
 
         if (targetObj.gameObject.tag.Equals("SpeedBoost"))
         {
             Ymovement += 0.5f;
-            rb.velocity = new Vector3(0, Ymovement, 0);
+            
         }
         if (targetObj.gameObject.tag.Equals("BigSpeedBoost"))
         {
             Ymovement += 1f;
-            rb.velocity = new Vector3(0, Ymovement, 0);
+            
         }
 
+    }
+
+    public void buttonlaunch()
+    {
+        Ymovement = 3.6f;
     }
 }
