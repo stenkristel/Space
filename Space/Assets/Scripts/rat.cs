@@ -9,11 +9,14 @@ public class rat : MonoBehaviour
     public Renderer rend;
     public Collider coll;
     public Rigidbody rb;
+    public AudioSource audioSource;
+    public AudioClip ratAudioClip;
 
     void OnCollisionEnter(Collision targetObj)
     {
         if (targetObj.gameObject.tag.Equals("Player"))
         {
+            audioSource.PlayOneShot(ratAudioClip);
             rend = GetComponent<Renderer>();
             rend.enabled = false;
             coll = GetComponent<Collider>();

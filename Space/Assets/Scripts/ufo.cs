@@ -13,11 +13,16 @@ public class ufo : MonoBehaviour
     public Renderer rend;
     public Collider coll;
     public Rigidbody rb;
+    public AudioSource audioSource;
+    public AudioClip ufoAudioClip;
+    public AudioClip playerAudioClip;
+
 
     void OnCollisionEnter(Collision targetObj)
     {
         if (targetObj.gameObject.tag.Equals("Player"))
         {
+            audioSource.PlayOneShot(playerAudioClip);
             rend = GetComponent<Renderer>();
             rend.enabled = false;
             coll = GetComponent<Collider>();
@@ -28,6 +33,7 @@ public class ufo : MonoBehaviour
 
         if (targetObj.gameObject.tag.Equals("Bullet"))
         {
+            audioSource.PlayOneShot(ufoAudioClip);
             health = health - 1f;
             
             if (health <= 0f)

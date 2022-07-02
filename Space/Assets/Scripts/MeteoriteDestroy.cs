@@ -13,11 +13,16 @@ public class MeteoriteDestroy : MonoBehaviour
     public Renderer rend;
     public Collider coll;
     public Rigidbody rb;
+    public AudioSource audioSource;
+    public AudioClip bulletDestroyAudioClip;
+    public AudioClip shipHitAudioClip;
+    public AudioClip itemDropAudioClip;
 
     void OnCollisionEnter(Collision targetObj)
     {
         if (targetObj.gameObject.tag.Equals("Player"))
         {
+            audioSource.PlayOneShot(shipHitAudioClip);
             rend = GetComponent<Renderer>();
             rend.enabled = false;
             coll = GetComponent<Collider>();
@@ -28,6 +33,7 @@ public class MeteoriteDestroy : MonoBehaviour
 
         if (targetObj.gameObject.tag.Equals("Bullet"))
         {
+            audioSource.PlayOneShot(bulletDestroyAudioClip);
             rend = GetComponent<Renderer>();
             rend.enabled = false;
             coll = GetComponent<Collider>();
@@ -36,6 +42,7 @@ public class MeteoriteDestroy : MonoBehaviour
             speed = 0f;
             if (Random.Range(0f, 1f) <= DropRate)
             {
+                audioSource.PlayOneShot(itemDropAudioClip);
                 Instantiate(DropPrefab, DropLocation.position, DropLocation.rotation);
             }
 

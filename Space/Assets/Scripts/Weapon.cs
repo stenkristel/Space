@@ -19,11 +19,15 @@ public class Weapon : MonoBehaviour
     private float nextFire = 0.0F;
     public float fireRateR = 0.5F;
     private float nextFireR = 0.0F;
+    public AudioSource audioSource;
+    public AudioClip shootingAudioClipL;
+    public AudioClip shootingAudioClipR;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.W) && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
+            audioSource.PlayOneShot(shootingAudioClipR);
             Instantiate(bulletPrefab, FirePoint0.position, FirePoint0.rotation);
             Instantiate(bulletPrefab, FirePoint1.position, FirePoint1.rotation);
             Instantiate(bulletPrefab, FirePoint2.position, FirePoint2.rotation);
@@ -32,6 +36,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time > nextFireR)
         {
             nextFireR = Time.time + fireRateR;
+            audioSource.PlayOneShot(shootingAudioClipL);
             Instantiate(bulletPrefab2, FirePointR1.position, FirePointR1.rotation);
             Instantiate(bulletPrefab, FirePointR0.position, FirePointR0.rotation);
             Instantiate(bulletPrefab2, FirePointR2.position, FirePointR2.rotation);
