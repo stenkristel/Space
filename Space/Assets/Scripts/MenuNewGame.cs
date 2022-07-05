@@ -10,10 +10,23 @@ public class MenuNewGame : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    
+
+
     public void QuitGame()
     {
         Debug.Log("QuitGame!");
         Application.Quit();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Backspace))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

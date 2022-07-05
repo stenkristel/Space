@@ -27,13 +27,7 @@ public class rat : MonoBehaviour
 
         if (targetObj.gameObject.tag.Equals("Bullet"))
         {
-            rend = GetComponent<Renderer>();
-            rend.enabled = false;
-            coll = GetComponent<Collider>();
-            coll.enabled = false;
-            StartCoroutine(waiter());
-            speed = 0f;
-
+            speed = speed - (speed * 2);
         }
         speed = speed - (speed * 2);
         if (speed > 0)

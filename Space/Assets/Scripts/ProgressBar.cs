@@ -14,8 +14,6 @@ public class ProgressBar : MonoBehaviour
     {
         progressBar = GetComponent<Image>();
         maxDistance = FinnishGO.transform.position.y;
-
-        progressBar.fillAmount = playerGO.transform.position.y / maxDistance;
     }
 
     // Update is called once per frame
