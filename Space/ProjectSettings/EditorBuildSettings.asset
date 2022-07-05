@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Roderik Victory screen.unity
     guid: 0f1533be94178b04e8d95c95f7508082
+  - enabled: 1
+    path: Assets/Scenes/QuickComic.unity
+    guid: a45ca4db232de7b49a822755cbb73247
+  - enabled: 1
+    path: Assets/Scenes/QuickComic2.unity
+    guid: 5d1bd7d78343a464e9a259c5c548954e
   m_configObjects: {}

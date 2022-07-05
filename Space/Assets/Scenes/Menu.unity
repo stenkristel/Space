@@ -258,7 +258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 22756935}
         m_TargetAssemblyTypeName: MenuNewGame, Assembly-CSharp
-        m_MethodName: Playgame
+        m_MethodName: Comic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

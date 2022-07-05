@@ -8,6 +8,16 @@ public class MenuNewGame : MonoBehaviour
     public void Playgame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    }
+    public void Comic()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public void menu()
+    {
+        SceneManager.LoadScene(0);
     }
 
 
