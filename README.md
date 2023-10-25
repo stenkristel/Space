@@ -1,3 +1,4 @@
+# Race to the mustache
 ### A couch co-op race game which is most similar to Space Invaders with a French twist.
 
 ## Sten Kristel
