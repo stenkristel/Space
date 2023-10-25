@@ -1,4 +1,4 @@
-### Een couch co-op race game vergelijkbaar met Space Invaders met een franse twist.
+### A couch co-op race game which is most similar to Space Invaders with a French twist.
 
 ## Sten Kristel
 #### Made the code for the players, which include movement, speed and damage. Aswell as the splitscreen feature, the obstacles and the menu UI. 
