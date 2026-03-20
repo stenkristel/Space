@@ -7,11 +7,32 @@ using UnityEngine.Events;
 
 public class CollisionEnterEventTrigger : MonoBehaviour
 {
-    public SerializedDictionary<ICollidable, UnityEvent> dictionary = new SerializedDictionary<ICollidable, UnityEvent>();
-    private void OnCollisionEnter(Collision other)
+    [SerializeField] private UnityEvent onMeteoriteCollisionEnter;
+    [SerializeField] private UnityEvent onUfoCollisionEnter;
+    [SerializeField] private UnityEvent onSpeedBoostCollisionEnter;
+    [SerializeField] private UnityEvent onBigSpeedBoostCollisionEnter;
+    [SerializeField] private UnityEvent onRatCollisionEnter;
+
+    //collision detection niet meegenomen in de refactor, alleen hoe het interact met het movement systeem
+    void OnCollisionEnter(Collision targetObj)
     {
-        if (!other.gameObject.TryGetComponent<ICollidable>(out ICollidable collidable)) return;
-        if (!dictionary.TryGetValue(collidable, out UnityEvent collisionEvent)) return;
-        collisionEvent.Invoke();
+        switch (targetObj.gameObject.tag)
+        {
+            case "Meteorite":
+                onMeteoriteCollisionEnter?.Invoke();
+                break;
+            case "ufo":
+                onUfoCollisionEnter?.Invoke();
+                break;
+            case "SpeedBoost":
+                onSpeedBoostCollisionEnter?.Invoke();
+                break;
+            case "BigSpeedBoost":
+                onBigSpeedBoostCollisionEnter?.Invoke();
+                break;
+            case "Rat":
+                onRatCollisionEnter?.Invoke();
+                break;
+        }
     }
 }

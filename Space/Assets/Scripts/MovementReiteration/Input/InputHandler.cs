@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InputHandler : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class InputHandler : MonoBehaviour
     {
         public KeyCode keyCode;
         public BaseCommand command;
+        public UnityEvent onPressed;
     }
 
     [SerializeField] private List<KeyBinding> bindings;
@@ -27,18 +29,18 @@ public class InputHandler : MonoBehaviour
             var keyBinding = bindings.ElementAt(i);
             if (Input.GetKey(keyBinding.keyCode))
             {
-                BaseCommand command = keyBinding.command;
-                command.Execute();
+                keyBinding.command?.Execute();
+                keyBinding.onPressed?.Invoke();
             }
             if (Input.GetKeyDown(keyBinding.keyCode))
             {
-                BaseCommand command = keyBinding.command;
-                command.ExecuteDown();
+                keyBinding.command?.Execute();
+                keyBinding.onPressed?.Invoke();
             }
             if (Input.GetKeyUp(keyBinding.keyCode))
             {
-                BaseCommand command = keyBinding.command;
-                command.ExecuteUp();
+                keyBinding.command?.Execute();
+                keyBinding.onPressed?.Invoke();
             }
         }
     }

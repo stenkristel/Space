@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,28 +7,24 @@ using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float Ymovement;
-    
     [SerializeField] private float minimumYSpeed;
     [SerializeField] private float maximumYSpeed;
     [SerializeField] private Rigidbody rigidBody;
     
     [SerializeField] private MinMaxEventStruct[] speedSprites;
-    
-    /*[SerializeField] private GameObject SpriteFast;
-    [SerializeField] private GameObject SpriteMedium;
-    [SerializeField] private GameObject SpriteSlow;
-    [SerializeField] private GameObject BigFlameSmallest;
-    [SerializeField] private GameObject BigFlame;
-    [SerializeField] private GameObject LeftSmallFlame;
-    [SerializeField] private GameObject RigthSmallFlame;
-    [SerializeField] private GameObject LeftSmallestFlame;
-    [SerializeField] private GameObject RigthSmallestFlame;*/
+
+    private float _yVelocity;
+
+    private void FixedUpdate()
+    {
+        var movementChange = _yVelocity * Time.deltaTime;
+        transform.position += new Vector3(0f, movementChange, 0f);
+    }
 
     public void MoveHorizontal(float speed)
     {
         var movementChange = speed * Time.deltaTime;
-        rigidBody.transform.position += new Vector3(movementChange, 0, 0);
+        transform.position += new Vector3(movementChange, 0, 0);
     }
 
     public void SetVerticalSpeed(float speed)
@@ -43,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         CheckForSpeedSpritesChange(speed);
-        rigidBody.velocity = new Vector3(0, speed, 0);
+        _yVelocity = speed;
     }
     
     public void EditVerticalSpeed(float speed)
@@ -54,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void StartMovingFromStandStill(float speed)
     {
-        if (Ymovement <= 0) SetVerticalSpeed(speed);
+        if (_yVelocity <= 0f) SetVerticalSpeed(speed);
     }
 
     public void CheckForSpeedSpritesChange(float speed)
@@ -68,42 +65,5 @@ public class PlayerMovement : MonoBehaviour
 
             speedRange.onInRange?.Invoke();
         }
-    }
-
-    void OnCollisionEnter(Collision targetObj)
-    {
-        if (targetObj.gameObject.tag.Equals("Meteorite"))
-        {
-            Ymovement -= 0.7f; 
-            
-        }
-        if (targetObj.gameObject.tag.Equals("ufo"))
-        {
-            Ymovement -= 1f;
-            
-        }
-
-        if (targetObj.gameObject.tag.Equals("SpeedBoost"))
-        {
-            Ymovement += 0.5f;
-            
-        }
-        if (targetObj.gameObject.tag.Equals("BigSpeedBoost"))
-        {
-            Ymovement += 1f;
-            
-        }
-
-        if (targetObj.gameObject.tag.Equals("Rat"))
-        {
-            StartCoroutine(waiter());
-        }
-
-    }
-    IEnumerator waiter()
-    {
-        Ymovement -= 1.5f;
-        yield return new WaitForSeconds(1.5f);
-        Ymovement += 1.5f;
     }
 }
